@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ChamadaActivity" >
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:onClick="irParaCadastro"
+        android:text="Cadastrar Turma" />
+
+    <Button
+        android:id="@+id/btnCadAluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCadastrar"
+        android:layout_below="@+id/btnCadastrar"
+        android:onClick="irParaCadAluno"
+        android:text="Cadastrar Aluno" />
+
+    <Button
+        android:id="@+id/btnChamada"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_below="@+id/spinTurmas"
+        android:enabled="false"
+        android:onClick="irParaChamada"
+        android:text="Realizar Chamada" />
+
+    <Spinner
+        android:id="@+id/spinTurmas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnCadAluno"
+        android:layout_below="@+id/btnCadAluno"
+        android:layout_marginRight="188dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinTurmas"
+        android:layout_alignTop="@+id/spinTurmas"
+        android:layout_marginRight="116dp"
+        android:layout_toLeftOf="@+id/spinTurmas"
+        android:text="Escolha a Turma:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

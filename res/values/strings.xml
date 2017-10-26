@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chamada</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_chamada">Chamada</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_splash">splash</string>
+    <string name="title_activity_cad_aluno">CadAlunoActivity</string>
+    <string name="title_activity_relatorio">RelatorioActivity</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="title_activity_tela_inicial">TelaInicialActivity</string>
+
+</resources>

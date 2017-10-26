@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CadAlunoActivity" >
+
+    <TextView
+        android:id="@+id/txvSelTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="71dp"
+        android:text="Selecione a turma : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnTurmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txvSelTurma"
+        android:layout_marginLeft="43dp"
+        android:layout_toRightOf="@+id/txvSelTurma" />
+
+    <Button
+        android:id="@+id/btnSalvarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvSelTurma"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="108dp"
+        android:enabled="false"
+        android:onClick="cadAluno"
+        android:text="Salvar" />
+
+    <TextView
+        android:id="@+id/txvNomeAlun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvSelTurma"
+        android:layout_below="@+id/txvSelTurma"
+        android:layout_marginTop="38dp"
+        android:text="Nome completo:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtNomeAlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txvNomeAlun"
+        android:layout_alignBottom="@+id/txvNomeAlun"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/txvNomeAlun"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rgopcoes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSalvarAluno"
+        android:layout_alignLeft="@+id/btnSalvarAluno" >
+		<RadioButton
+		        android:id="@+id/rdbMasc"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_above="@+id/rgopcoes"
+		        android:layout_alignLeft="@+id/rgopcoes"
+       			android:text="masculino" />
+        <RadioButton
+            android:id="@+id/rdbFem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:text="feminino" />
+    </RadioGroup>
+
+    
+
+</RelativeLayout>

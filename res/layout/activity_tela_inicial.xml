@@ -1,0 +1,45 @@
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnChamadaInicial"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:enabled="false"
+        		android:onClick="irParaChamada"
+                android:text="Chamada" />
+
+            <Button
+                android:id="@+id/btnTurmasInicial"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:onClick="irParaCadastro"
+                android:text="Turmas" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnRelatoriosInicial"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Relatórios" />
+
+            <Button
+                android:id="@+id/btnAjudaInicial"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Ajuda" />
+        </TableRow>
+
+    </TableLayout>

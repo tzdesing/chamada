@@ -1,0 +1,119 @@
+<TableLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layoutChamada"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+  
+  <TableRow>  
+      <TextView
+        android:id="@+id/txvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Data = xx/xx/2014"
+        android:textAppearance="?android:attr/textAppearanceLarge" />  
+  </TableRow> 
+  <TableRow> 
+    <LinearLayout
+      android:id="@+id/topleft"
+      android:layout_width="0dp"
+      android:layout_height="200dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg" 
+      android:orientation="vertical">
+      
+      <TextView
+        android:id="@+id/txvPresentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Presentes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />  
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/topcenter"
+      android:layout_width="0dp"
+      android:layout_height="200dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg" >
+<TableLayout 
+  android:id="@+id/tabcentral"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+  
+  		<TableRow
+  		    android:gravity="center_horizontal|center_vertical">
+      
+	        <TextView
+	            android:id="@+id/txvAlunos"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Alunos"
+	            android:textAlignment="center"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</TableRow> 
+  		<TableRow 
+  		    android:gravity="center_horizontal|center_vertical">
+	      <ImageView
+	          android:id="@+id/myimage1"
+	          android:layout_width="120dp"
+	          android:layout_height="120dp"
+	          android:src="@drawable/ic_launcher"
+	          android:textAlignment="center"/>"
+		</TableRow> 
+  </TableLayout> 
+      
+      
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/topright"
+      android:layout_width="0dp"
+      android:layout_height="200dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg" 
+      android:orientation="vertical">
+      
+        <TextView
+        android:id="@+id/txvAusentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ausentes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />  
+      
+    </LinearLayout>
+  </TableRow>
+  
+  <TableRow
+      android:gravity="center_horizontal|center_vertical">
+      <TextView
+            android:id="@+id/txvNomes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+  </TableRow>
+
+  <Button
+      android:id="@+id/btnSalvar"
+      android:layout_width="500dp"
+      android:layout_height="wrap_content"
+      android:onClick="salvaChamada"
+      android:enabled="false"
+      android:text="Salvar" />
+
+  <Button
+      android:id="@+id/btnVoltar"
+      android:layout_width="500dp"
+      android:layout_height="wrap_content"
+      android:onClick="irParaMain"
+      android:text="Voltar" />
+  
+</TableLayout>
+
